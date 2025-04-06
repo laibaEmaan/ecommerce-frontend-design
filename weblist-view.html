@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-listview</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--cloudflare icons  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="weblistview.css">
+    <!-- for star ratings icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap footer link -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+      <!-- navbar -->
+      <nav class="navbar">
+
+        <div style="display: flex; margin-left: 60px; margin-bottom: 20px; ">
+            <div class="brandText">
+                <img src="Ecommerce Web Design (Community) (1)/Brand/logo-colored.svg" alt="Logo">
+            </div>
+            <div class="searchBar">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option> All category</option>
+                </select>
+                <button>Search</button>
+            </div>
+
+            <span class="icons">
+                <img src="Actions.png" alt="Actions">
+              </span> 
+
+        </div>
+        <div class="nav-inner2">
+            <div class="menu">
+                <a href="#"><i class="fa fa-bars"></i>All category</a>
+                <a href="#">Hot offers</a>
+                <a href="#">Gift boxes</a>
+                <a href="#">Projects</a>
+                <a href="#">Menu item</a>
+                <select style="border: none; font-weight: 600;">
+                    <option>Help</option>
+                </select>
+            </div>
+
+            <div class="language">
+                <span>English,USD
+                    <select style="border: none;">
+
+                    </select></span>
+
+                <span> Ship to <img src="germany.png" alt="">
+                    <select style="border: none;">
+                    </select></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="vertical-divider"></div> <!-- This will act as the separator -->
+
+    <!-- for main content div -->
+    <div class="main-content" style="background-color: #f7fafc;">
+        <div class="top-part"
+            style="display: flex; flex-direction: row; gap: 0.5rem; padding-left: 100px; padding-top: 20px;">
+            <p style="color: #8b96a5;">Home</p>
+            <p style="color: #8b96a5;">></p>
+            <p style="color: #8b96a5;">Clothings</p>
+            <p style="color: #8b96a5;">></p>
+            <p style="color: #8b96a5;">Men's Wear</p>
+            <p style="color: #8b96a5;">></p>
+            <p style="color: #8b96a5;">Summer Clothing</p>
+        </div>
+
+        <div class="both-sides" style="display: flex; flex-direction: row;">
+            <!-- for left side -->
+            <div class="left-side" style="padding-left: 75px; width: 25%;">
+                <div class="divider"></div> <!-- This will act as the separator -->
+                <!-- for category -->
+                <button class="collapsible" style="color: black; font-weight: bold;">Category<img width="24" height="24"
+                        src="https://img.icons8.com/material/24/8b96a5/collapse-arrow--v1.png"
+                        alt="collapse-arrow--v1" /></button>
+                <div class="content">
+                    <p style="color: #505050;">Mobile accessory</p>
+                    <p style="color: #505050;">Electronics</p>
+                    <p style="color: #505050;">Smartphones</p>
+                    <p style="color: #505050;">Modern tech</p>
+                    <p style="color: #0d6efd;">See all</p>
+                </div>
+                <div class="divider"></div> <!-- This will act as the separator -->
+
+                <!-- for brand -->
+                <button class="collapsible" style="color: black; font-weight: bold;">Brands<img width="24" height="24"
+                        src="https://img.icons8.com/material/24/8b96a5/collapse-arrow--v1.png"
+                        alt="collapse-arrow--v1" /></button>
+                <div class="content">
+                    <input type="checkbox" id="field1" name="field1" value="Samsung">
+                    <label for="field1" style="color: #505050;"> Samsung</label><br>
+                    <input type="checkbox" id="field2" name="field2" value="Apple">
+                    <label for="field2" style="color: #505050;"> Apple</label><br>
+                    <input type="checkbox" id="field3" name="field3" value="Huawei">
+                    <label for="field3" style="color: #505050;"> Huawei</label><br>
+                    <input type="checkbox" id="field4" name="field4" value="Pocco">
+                    <label for="field4" style="color: #505050;"> Pocco</label><br>
+                    <input type="checkbox" id="field5" name="field5" value="Lenovo">
+                    <label for="field5" style="color: #505050;"> Lenovo</label><br>
+                    <p style="color: #0d6efd;">See all</p>
+                </div>
+                <div class="divider"></div> <!-- This will act as the separator -->
+
+                <!-- for features -->
+                <button class="collapsible" style="color: black; font-weight: bold;">Features<img width="24" height="24"
+                        src="https://img.icons8.com/material/24/8b96a5/collapse-arrow--v1.png"
+                        alt="collapse-arrow--v1" /></button>
+                <div class="content">
+                    <input type="checkbox" id="field1" name="field1" value="Metallic">
+                    <label for="field1" style="color: #505050;"> Metallic</label><br>
+                    <input type="checkbox" id="field2" name="field2" value="Plastic cover">
+                    <label for="field2" style="color: #505050;"> Plastic cover</label><br>
+                    <input type="checkbox" id="field3" name="field3" value="8GB Ram">
+                    <label for="field3" style="color: #505050;"> 8GB Ram</label><br>
+                    <input type="checkbox" id="field4" name="field4" value="Super power">
+                    <label for="field4" style="color: #505050;"> Super power</label><br>
+                    <input type="checkbox" id="field5" name="field5" value="Large memory">
+                    <label for="field5" style="color: #505050;"> Large memory</label><br>
+                    <p style="color: #0d6efd;">See all</p>
+                </div>
+                <div class="divider"></div> <!-- This will act as the separator -->
+
+                <!-- for price range -->
+                <button class="collapsible" style="color: black; font-weight: bold;">Price range<img width="24"
+                        height="24" src="https://img.icons8.com/material/24/8b96a5/collapse-arrow--v1.png"
+                        alt="collapse-arrow--v1" /></button>
+                <div class="content">
+                    <form action="/action_page.php">
+                        <div class="wrapper">
+                            <!-- for slider class -->
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <!-- for range-input -->
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            </div>
+                            <!-- for minimum -->
+                            <div class="price-input"
+                                style="display: flex; flex-direction: row; gap: 1rem; margin-bottom: -80px; margin-top: 32px;">
+                                <div class="field" style="display: flex; flex-direction: column;">
+                                    <label for="Min">Min</label>
+                                    <input type="number" class="input-min" value="2500" id="Min" name="Min"><br><br>
+                                </div>
+                                <!-- for maximum -->
+                                <div class="field" style="display: flex; flex-direction: column;">
+                                    <label for="Max">Max</label>
+                                    <input type="number" class="input-max" value="7500" id="Max" name="Max"><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Apply"
+                            style="width: 175px; border: 1px solid #e1e5ea; border-radius: 9%; color: #0d6efd; background-color: #ffffff; padding: 5px;">
+                    </form>
+                </div>
+                <div class="divider"></div> <!-- This will act as the separator -->
+
+                <!-- for condition -->
+                <button class="collapsible" style="color: black; font-weight: bold;">Condition<img width="24"
+                        height="24" src="https://img.icons8.com/material/24/8b96a5/collapse-arrow--v1.png"
+                        alt="collapse-arrow--v1" /></button>
+                <div class="content">
+                    <input type="radio" id="Any" name="field1" value="Any">
+                    <label for="Any" style="color: #505050;">Any</label><br>
+                    <input type="radio" id="Refurbished" name="field2" value="Refurbished">
+                    <label for="Refurbished" style="color: #505050;">Refurbished</label><br>
+                    <input type="radio" id="Brand new" name="field3" value="Brand new">
+                    <label for="Brand new" style="color: #505050;">Brand new</label><br>
+                    <input type="radio" id="Old items" name="field4" value="Old items">
+                    <label for="Old items" style="color: #505050;">Old items</label><br>
+                </div>
+                <div class="divider"></div> <!-- This will act as the separator -->
+
+                <!-- for ratings -->
+                <button class="collapsible" style="color: black; font-weight: bold;">Ratings<img width="24" height="24"
+                        src="https://img.icons8.com/material/24/8b96a5/collapse-arrow--v1.png"
+                        alt="collapse-arrow--v1" /></button>
+                <div class="content">
+                    <!-- for 5 stars -->
+                    <input type="checkbox" id="field1" name="field1" value="5stars">
+                    <label for="field1">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label><br>
+                    <!-- for 4 stars -->
+                    <input type="checkbox" id="field2" name="field2" value="4stars">
+                    <label for="field2">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                    </label><br>
+                    <!-- for 3 stars -->
+                    <input type="checkbox" id="field3" name="field3" value="3stars">
+                    <label for="field3">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                        <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                    </label><br>
+                    <!-- for 2 stars -->
+                    <input type="checkbox" id="field4" name="field4" value="2stars">
+                    <label for="field4">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                        <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                        <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                    </label><br>
+                </div>
+                <div class="divider"></div> 
+                <button class="collapsible" style="color: black; font-weight: bold;">Manufacturer<img width="24" height="24"
+                    src="https://img.icons8.com/material/24/8b96a5/collapse-arrow--v1.png"
+                    alt="collapse-arrow--v1" /></button>
+            </div>
+
+
+            <!-- for right side -->
+            <div class="right-side" style="width: 70%; padding-left: 30px;">
+                <!-- for top part of right side -->
+                <div class="first-part" style="display: flex; flex-direction: row;gap: 11px;">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <p style="margin-bottom: 0px;">12,911 items in <span style="font-weight: bold;">Mobile
+                                accessory</span></p>
+                    </div>
+
+                    <div class="rightside-top-checkbox"
+                        style="padding-left: 245px;display: flex; justify-content: center; align-items: center; gap: 3px;">
+                        <input type="checkbox" id="field1" name="field1" value="Verified Only">
+                        <label for="field1" style="color: black;"> Verified Only</label><br>
+                    </div>
+
+                    <div class="Featured-rightpart"
+                        style="display: flex; justify-content: center; align-items: center;">
+                        <label for="Featured" class="visually-hidden">Featured</label>
+                        <select name="Featured" id="Featured" style="width: 150px;">
+                            <option value="Featured">Featured</option>
+                            <option value="Popular">Popular</option>
+                        </select>
+                    </div>
+
+
+                    <div class="toggle-container">
+                     
+                        <button id="gridView" class="toggle-btnn">
+                            <span class="grid-icon"></span>
+                        </button>
+                        <button id="listView" class="toggle-btnn active">
+                            <span class="list-icon"></span>
+                        </button>
+                  
+                    </div>
+                </div>
+
+                <!-- for products card part of right side -->
+                <div class="middle-part"
+                    style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px; background-color: transparent;">
+                    <!-- for first card -->
+                    <div class="first-card" style="background-color: white;">
+                        <!-- picture part -->
+                        <div class="picture">
+                            <img src="Ecommerce Web Design (Community) (1)/Image/tech/1.jpg" alt="">
+                        </div>
+                        <!-- All info -->
+                        <div class="all-info" style=" padding-top: 20px;display: flex; flex-direction: column; justify-content: center;">
+                            <h6 style="font-weight: 600;">Canon Cmera EOS 2000, Black 10x Zoom</h6>
+                            <h5>$998.00 <span class="cut-text" style="color: #8b96a5; font-size: medium;"> $1128.00</span></h5>
+
+                            <!-- for sub info -->
+                            <div class="sub-info" style="display: flex; flex-direction: row; gap: 10px;">
+                                <!-- for stars -->
+                                <label for="field2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                                </label><br>
+                                <!-- for 7.5 -->
+                                <p style="color: #ff9017; font-weight: 350;">7.5</p>
+                                <span class="circle-text" style="color: #929dab">154 orders</span>
+                                <p style="color: #20be34; font-weight: 350;">Free Shipping</p>
+                            </div>
+                            <!-- end -->
+                            <p style="color:
+                             #505050;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus recusandae cupiditate accusantium nemo repellendus magnam aperiam fugit
+                               </p>
+                            <p style="color: #0d6efd; font-size: medium;">View details</p>
+                        </div>
+
+                        <!-- for heart button the rightmost part of card-->
+                        <div class="third-card-div" style="padding: 15px;">
+                            <div class="heart-button">
+                                <img width="32" height="32" src="https://img.icons8.com/windows/32/0d6efd/hearts.png" alt="hearts"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- for second card -->
+                    <div class="second-card" style="background-color: white;">
+                        <!-- picture part -->
+                        <div class="picture">
+                            <img src="Ecommerce Web Design (Community) (1)/Image/tech/3.png" alt="">
+                        </div>
+                        <!-- All info -->
+                        <div class="all-info" style=" padding-top: 20px; display: flex; flex-direction: column; justify-content: center;">
+                            <h6 style="font-weight: 600;">GoPro HERO6 4K Action Camera - Black</h6>
+                            <h5>$998.00</h5>
+
+                            <!-- for sub info -->
+                            <div class="sub-info" style="display: flex; flex-direction: row; gap: 10px;">
+                                <!-- for stars -->
+                                <label for="field2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                                </label><br>
+                                <!-- for 7.5 -->
+                                <p style="color: #ff9017; font-weight: 350;">7.5</p>
+                                <span class="circle-text" style="color: #929dab">154 orders</span>
+                                <p style="color: #20be34; font-weight: 350;">Free Shipping</p>
+                            </div>
+                            <!-- end -->
+                            <p style="color:
+                             #505050;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus recusandae cupiditate accusantium nemo repellendus magnam aperiam fugit
+                                fugiat.</p>
+                            <p style="color: #0d6efd; font-size: medium;">View details</p>
+                        </div>
+
+                        <!-- for heart button the rightmost part of card-->
+                        <div class="third-card-div" style="padding: 15px;">
+                            <div class="heart-button">
+                                <img width="32" height="32" src="https://img.icons8.com/windows/32/0d6efd/hearts.png" alt="hearts"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- for third card -->
+                    <div class="third-card" style="background-color: white;">
+                        <!-- picture part -->
+                        <div class="picture">
+                            <img src="Ecommerce Web Design (Community) (1)/Image/tech/2.png" alt="">
+                        </div>
+                        <!-- All info -->
+                        <div class="all-info" style="padding-top: 20px;display: flex; flex-direction: column; justify-content: center;">
+                            <h6 style="font-weight: 600;">GoPro HERO6 4K Action Camera - Black</h6>
+                            <h5>$998.00</h5>
+
+                            <!-- for sub info -->
+                            <div class="sub-info" style="display: flex; flex-direction: row; gap: 10px;">
+                                <!-- for stars -->
+                                <label for="field2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                                </label><br>
+                                <!-- for 7.5 -->
+                                <p style="color: #ff9017; font-weight: 350;">7.5</p>
+                                <span class="circle-text" style="color: #929dab">154 orders</span>
+                                <p style="color: #20be34; font-weight: 350;">Free Shipping</p>
+                            </div>
+                            <!-- end -->
+                            <p style="color:
+                             #505050;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus recusandae cupiditate accusantium nemo repellendus magnam aperiam fugit
+                                fugiat.</p>
+                            <p style="color: #0d6efd; font-size: medium;">View details</p>
+                        </div>
+
+                        <!-- for heart button the rightmost part of card-->
+                        <div class="third-card-div" style="padding: 15px;">
+                            <div class="heart-button">
+                                <img width="32" height="32" src="https://img.icons8.com/windows/32/0d6efd/hearts.png" alt="hearts"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- for fourth card -->
+                    <div class="fourth-card" style="background-color: white;">
+                        <!-- picture part -->
+                        <div class="picture">
+                            <img src="Ecommerce Web Design (Community) (1)/Image/tech/7.png" alt="">
+                        </div>
+                        <!-- All info -->
+                        <div class="all-info" style="padding-top: 20px;display: flex; flex-direction: column; justify-content: center;">
+                            <h6 style="font-weight: 600;">GoPro HERO6 4K Action Camera - Black</h6>
+                            <h5>$998.00</h5>
+
+                            <!-- for sub info -->
+                            <div class="sub-info" style="display: flex; flex-direction: row; gap: 10px;">
+                                <!-- for stars -->
+                                <label for="field2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                                </label><br>
+                                <!-- for 7.5 -->
+                                <p style="color: #ff9017; font-weight: 350;">7.5</p>
+                                <span class="circle-text" style="color: #929dab">154 orders</span>
+                                <p style="color: #20be34; font-weight: 350;">Free Shipping</p>
+                            </div>
+                            <!-- end -->
+                            <p style="color:
+                             #505050;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus recusandae cupiditate accusantium nemo repellendus magnam aperiam fugit
+                                fugiat.</p>
+                            <p style="color: #0d6efd; font-size: medium;">View details</p>
+                        </div>
+
+                        <!-- for heart button the rightmost part of card-->
+                        <div class="third-card-div" style="padding: 15px;">
+                            <div class="heart-button">
+                                <img width="32" height="32" src="https://img.icons8.com/windows/32/0d6efd/hearts.png" alt="hearts"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- for fifth card -->
+                    <div class="fifth-card" style="background-color: white;">
+                        <!-- picture part -->
+                        <div class="picture">
+                            <img src="Ecommerce Web Design (Community) (1)/Image/tech/8.png" alt="">
+                        </div>
+                        <!-- All info -->
+                        <div class="all-info" style="padding-top: 20px;display: flex; flex-direction: column; justify-content: center;">
+                            <h6 style="font-weight: 600;">GoPro HERO6 4K Action Camera - Black</h6>
+                            <h5>$998.00 <span class="cut-text" style="color: #8b96a5; font-size: medium;"> $1128.00</span></h5>
+
+                            <!-- for sub info -->
+                            <div class="sub-info" style="display: flex; flex-direction: row; gap: 10px;">
+                                <!-- for stars -->
+                                <label for="field2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                                </label><br>
+                                <!-- for 7.5 -->
+                                <p style="color: #ff9017; font-weight: 350;">7.5</p>
+                                <span class="circle-text" style="color: #929dab">154 orders</span>
+                                <p style="color: #20be34; font-weight: 350;">Free Shipping</p>
+                            </div>
+                            <!-- end -->
+                            <p style="color:
+                             #505050;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus recusandae cupiditate accusantium nemo repellendus magnam aperiam fugit
+                                fugiat.</p>
+                            <p style="color: #0d6efd; font-size: medium;">View details</p>
+                        </div>
+
+                        <!-- for heart button the rightmost part of card-->
+                        <div class="third-card-div" style="padding: 15px;">
+                            <div class="heart-button">
+                                <img width="32" height="32" src="https://img.icons8.com/windows/32/0d6efd/hearts.png" alt="hearts"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- for sixth card -->
+                    <div class="sixth-card" style="background-color: white;">
+                        <!-- picture part -->
+                        <div class="picture">
+                            <img src="Ecommerce Web Design (Community) (1)/Image/tech/9.png" alt="">
+                        </div>
+                        <!-- All info -->
+                        <div class="all-info" style="padding-top: 20px;display: flex; flex-direction: column; justify-content: center;">
+                            <h6 style="font-weight: 600;">GoPro HERO6 4K Action Camera - Black</h6>
+                            <h5>$998.00</h5>
+
+                            <!-- for sub info -->
+                            <div class="sub-info" style="display: flex; flex-direction: row; gap: 10px;">
+                                <!-- for stars -->
+                                <label for="field2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star" style="color: #bdc4cd;"></span>
+                                </label><br>
+                                <!-- for 7.5 -->
+                                <p style="color: #ff9017; font-weight: 350;">7.5</p>
+                                <span class="circle-text" style="color: #929dab">154 orders</span>
+                                <p style="color: #20be34; font-weight: 350;">Free Shipping</p>
+                            </div>
+                            <!-- end -->
+                            <p style="color:
+                             #505050;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus recusandae cupiditate accusantium nemo repellendus magnam aperiam fugit
+                                fugiat.</p>
+                            <p style="color: #0d6efd; font-size: medium;">View details</p>
+                        </div>
+
+                        <!-- for heart button the rightmost part of card-->
+                        <div class="third-card-div" style="padding: 15px;">
+                            <div class="heart-button">
+                                <img width="32" height="32" src="https://img.icons8.com/windows/32/0d6efd/hearts.png" alt="hearts"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="bottom-part" style="display: flex; flex-direction: row; gap: 0.5rem; width: 95%; justify-content: right ; align-items:flex-start ; padding-top: 40px; padding-bottom: 40px; align-items: center;">
+            <!-- show number of items -->
+            <div class="show-xyz-items" style="display: flex; justify-content: center; align-items: center;">
+                <label for="Show 10" class="visually-hidden">Show 10</label>
+                <select name="Show 10" id="Show 10" style="width: 150px;">
+                    <option value="Show 10">Show 10</option>
+                    <option value="Show 9">Show 9</option>
+                    <option value="Show 8">Show 8</option>
+                    <option value="Show 7">Show 7</option>
+                    <option value="Show 6">Show 6</option>
+                    <option value="Show 5">Show 5</option>
+                </select>
+            </div>
+
+            <!-- for page number selector -->
+            <div class="pagination">
+                <button id="prev" onclick="changePage(-1)"><img width="23" height="23" src="https://img.icons8.com/ios-filled/50/less-than.png" alt="less-than"/></button>
+                <span id="pageNumbers"></span>
+                <button id="next" onclick="changePage(1)"><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/more-than.png" alt="more-than"/></button>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- ended -->
+
+<!-- footer     -->
+<div class="container-fluid" style="padding-top: 50px;">
+       
+    <div class="col-4 offset-1">
+        <form>
+          <h4 style="text-align: center; font-weight: bold;">Subscribe on our newsletter</h4>
+    <p style="width: 546px; color: #666666;">Get daily news on upcoming offers from many suppliers all over the world</p>
+          <div class="d-flex w-100 gap-2" style="margin-left: 44px;">
+            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+            <input id="newsletter1" type="text" class="form-control" placeholder=" Email ">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+
+
+<footer >
+
+  <div class="row">
+    <div class="col-2" style="width: 305px;">
+        <img src="Ecommerce Web Design (Community) (1)/Brand/logo-colored.svg" alt="">
+      <p style=" padding-top: 20px; ">Best information about the company gies here but now lorem ipsum is</p>
+      <img src="Group 987.png" alt="">
+    </div>
+
+    <div class="col-2">
+      <h5>About</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">About Us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Find store</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Categories</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Blogs</a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <h5>Partnership</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">About Us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Find store</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Categories</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Blogs</a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <h5>information</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Help Center</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Money Refund</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Shipping</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <h5>For users</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Login</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Register</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Settings</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">My Orders</a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <h5>Get app</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link"><img src="Ecommerce Web Design (Community) (1)/Image/user-options/market-button.png" alt=""></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link"><img src="Ecommerce Web Design (Community) (1)/Image/user-options/market-button 2.png" alt=""></a></li>
+      </ul>
+    </div>
+
+
+
+  
+  </div>
+
+  <div class="d-flex justify-content-between my-3 ">
+    <p style="color: #666666; margin-left: 98px;">&copy; 2023 Ecommerce.</p>
+
+    <p style="color: #666666; margin-right: 145px;"><img src="https://flagcdn.com/w40/us.png" alt=""> English  <select style="border: none;">
+    </select></p>
+   
+  </div>
+</footer>
+</div>
+
+    <script src="weblistview.js"></script>
+    <script>
+        // for the footer flags language
+        function toggleDropdown() {
+            document.getElementById("dropdown-content").style.display =
+                document.getElementById("dropdown-content").style.display === "block" ? "none" : "block";
+        }
+
+        function selectLanguage(lang, name, flagUrl) {
+            document.getElementById("selected-language").innerText = name;
+            document.getElementById("selected-flag").src = flagUrl;
+            document.getElementById("dropdown-content").style.display = "none";
+
+            // Redirect to the selected language page
+            // window.location.href = `http://www.jthink.net/songkong/${lang}`;
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function (event) {
+            if (!event.target.closest(".dropdown")) {
+                document.getElementById("dropdown-content").style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>
